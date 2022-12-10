@@ -1,0 +1,431 @@
+@media(max-width:1200px) {
+    .menu {
+        margin: 0 auto;
+    }
+
+    .header-content {
+        &__blockquote-text {
+
+            font-size: 26px;
+            line-height: 35px;
+            padding-bottom: 30px;
+
+            &::before {
+                display: none;
+
+            }
+        }
+
+        &__info-title {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__info-text {
+            font-size: 18px;
+        }
+    }
+
+    .articles {
+        &__video img {
+            width: 300px;
+        }
+    }
+    .clinics{
+        padding: 60px 0;
+        &__info-item{
+            padding-left: 4px;
+            &::before{
+                left: -10px;
+            }
+        }
+        &__info{
+            padding-left: 15px;
+        }
+        &__map iframe{
+            max-width: 300px;
+            
+        }
+    }
+}
+
+@media(max-width:900px) {
+
+    .menu__btn {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        right: 0;
+        top: 28px;
+        cursor: pointer;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 20px;
+        right: 6px;
+        width: 35px;
+        height: 3px;
+        background-color: #ED8F8F;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    .second {
+        top: 26px;
+    }
+
+    .third {
+        top: 34px;
+    }
+
+    .burger-line--active {
+        transition: all .5s;
+    }
+
+    .first.burger-line--active {
+        display: none;
+    }
+
+    .second.burger-line--active {
+        top: 34px;
+        transform: rotate(45deg);
+    }
+
+    .third.burger-line--active {
+        transform: rotate(-45deg);
+    }
+
+    .menu__list {
+        transform: translateY(-600px);
+        position: absolute;
+        top: 82px;
+        display: block;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    .menu__list--active {
+        transform: translateY(0);
+        background-color: #ED8F8F;
+    }
+
+    .menu__list-item {
+        padding: 20px 0;
+
+        border-bottom: none;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        transition: all .5s;
+    }
+
+    .menu__list li+li {
+        margin-left: 0;
+    }
+
+    .menu__list-link {
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
+        transition: all ease-in .3s;
+        width: 100%;
+        display: inline-block;
+
+    }
+
+    .menu__list-link:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+
+    }
+
+    .logo {
+        &__img {
+            width: 50px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .articles {
+        padding: 80px 0;
+
+        &__video img {
+            width: 200px;
+        }
+
+        &__section-title {
+            padding-left: 15px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__item-list {
+            margin-right: 30px;
+        }
+
+        &__content {
+            margin: 0 0 0 40px;
+        }
+
+        &__item-li {
+            font-size: 10px;
+        }
+
+        &__item-list--title {
+            font-size: 12px;
+        }
+    }
+    .algorithm{
+        &__info-text{
+            font-size: 20px;
+        }
+    }
+    .subscription{
+        padding: 60px 0;
+        &__items{
+            justify-content: space-between;
+        }
+        &__item{
+            width: 280px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__item-title{
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+    }
+    .subscription__items .subscription__item+.subscription__item{
+        margin-left: 30px;
+    }
+    .team{
+        &__item{
+            width: 220px;
+        }
+    }
+}
+
+@media(max-width:650px) {
+    .header-content {
+        &__info-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__info-text {
+            font-size: 14px;
+        }
+
+        &__blockquote-inner {
+            padding: 40px 30px;
+        }
+
+        &__blockquote-text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__blockquote-author {
+            font-size: 12px;
+        }
+    }
+
+    .articles {
+        &__section-title {
+            font-size: 30px;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__item-list {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__items {
+            align-items: flex-start;
+        }
+    }
+    .algorithm{
+        &__video{
+            display: none;
+        }
+        &__title{
+            font-size: 30px;
+        }
+    }
+    .subscription{
+        &__item-price{
+            margin-bottom: 20px;
+        }
+    }
+    .clinics{
+        &__title{
+            font-size: 30px;
+        }
+        &__info-item--title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .select{
+        width: 140px;
+    }
+    .team{
+        &__title{
+            font-size: 30px;
+        }
+        &__item{
+            width: 220px;
+        }
+    }
+    .partners{
+        padding: 60px 0;
+        &__title{
+            font-size: 30px;
+        }
+       
+    }
+}
+
+@media(max-width:550px) {
+    .header-content {
+        &__inner {
+            flex-direction: column;
+
+        }
+
+        &__info {
+            width: auto;
+        }
+
+        &__blockquote {
+            margin-left: 0;
+        }
+    }
+
+    .menu__list-link {
+        font-size: 14px;
+    }
+
+    .logo {
+        &__img {
+            width: 40px;
+        }
+
+        &__text {
+            font-size: 10px;
+        }
+    }
+
+    .articles {
+        &__title {
+            font-size: 14px;
+        }
+    }
+
+    .select {
+      
+
+        &__wrapper {
+            &::before {
+                right: 2px;
+            }
+        }
+    }
+    .subscription{
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            margin-bottom: 40px;
+        }
+    }
+    .subscription__items .subscription__item+.subscription__item{
+        margin-left: 0;
+      
+    }
+    .clinics{
+        &__inner{
+            flex-direction: column;
+        }
+        &__info{
+            margin-bottom: 50px;
+        }
+    }
+.partners{
+    &__list{
+        flex-direction: column;
+    }
+    &__img{
+        width: 150px;
+    }
+}
+.partners__list li+li{
+    margin-top: 40px;
+}
+.footer{
+    &__links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__link{
+        font-size: 10px;
+    }
+}
+.footer__links a+a{
+    margin-left: 20px;
+}
+}
+
+@media(max-width:400px) {
+    .articles {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .article-select__inner{
+        padding-bottom: 100px;
+    }
+    .clinics{
+        &__info-item--title{
+            font-size: 18px;
+        }
+        &__info-item{
+            font-size: 16px;
+        }
+    }
+    .select{
+        width: 300px;
+    }
+    .clinics{
+        &__map iframe{
+            width: 250px;
+        }
+    }
+}

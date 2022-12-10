@@ -1,0 +1,25 @@
+$default: #000;
+
+
+
+%section-titlefont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    color: #242121;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 2px;
+        bottom: -10px;
+        background-color: #ED8F8F;
+    }
+}
+
+
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Raleway', sans-serif;

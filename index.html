@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Me</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="images/site-logo.png" type="png/jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,400;1,500;1,600;1,800&family=Raleway:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header-top__inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+              <p class="logo__text">
+                PET ME <br> Semper Fidelis - всегда верен
+              </p>
+            </a>
+            <nav class="menu">
+              <div class="menu__btn" id="#menu__btn">
+                <div class="burger-line first"></div>
+              <div class="burger-line second"></div>
+              <div class="burger-line third"></div>   
+              </div>
+             
+              <ul class="menu__list" id="#menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#articles">
+                    Статьи
+                  </a> 
+                  </li>
+                  <li class="menu__list-item">
+                  <a class="menu__list-link" href="#algorithm">
+                    Забота и Уход
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#about">
+                    О нас
+                  </a>
+                  </li>
+                  <li class="menu__list-item">
+                  <a class="menu__list-link" href="#contact">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-content">
+          <div class="header-content__inner">
+            <div class="header-content__info">
+              <h4 class="header-content__info-title">
+                Платформа PET ME
+              </h4>
+              <p class="header-content__info-text">
+                Помогает владельцам и любителям животных по всей России получить интересную и актуальную информацию для
+                улучшения жизни питомца
+              </p>
+            </div>
+            <blockquote class="header-content__blockquote">
+              <div class="header-content__blockquote-inner">
+                <p class="header-content__blockquote-text">
+                  «Мы в ответе за тех,кого приручили»
+                </p>
+                <span class="header-content__blockquote-author">
+                  Антуан де Сент-Экзюпери
+                </span>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+    </header>
+
+
+
+
+
+ <main class="main">
+      <section class="articles" id="articles">
+        <h2 class="articles__section-title">
+          Статьи
+        </h2>
+        <div  class="articles__inner">
+          <div class="container">
+            <h4 class="articles__title">
+              Советы по уходу за домашним питомцем от экспертов
+            </h4>
+            <div class="articles__items">
+              <div class="article-select__inner">
+                <div class="article-select__title">
+                  Выберите животное
+                </div>
+                <div class="article-select__group">
+                  <div class="select__wrapper">
+                    <select class="select" name="select-category" id="#select">
+                      <option value="default" hidden>
+                        Выбрать
+                      </option>
+                      <option value="cat">
+                        кот
+                      </option>
+                      <option value="dog">
+                        собака
+                      </option>
+                      <option value="rodents">
+                       грызуны
+                      </option>
+                      <option value="fish">
+                       рыбки
+                      </option>
+                      <option value="exotic">
+                       экзотика
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <div id="#changing-content" class="articles__content">
+
+                <div id="default-content" class="default__content">
+                
+                </div>
+
+                <div id="#content1" class="articles__content1">
+
+                  <div class="articles__item">
+                    <ul class="articles__item-list">
+                      <li class="articles__item-list--title">
+                        Советы для ухода за котом
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 3 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 3 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 3 раза в день
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="articles__item">
+                    <div class="articles__video" href="https://www.youtube.com/watch?v=KTQ-uMCiC2U&ab_channel=%D0%90%D0%BD%D0%BD%D0%B0%D0%9B%D0%B8%D1%82%D0%B2%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0" data-fancybox>
+                      <img src="images/articles/2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="#content2" class="articles__content2">
+
+                  <div class="articles__item">
+                    <ul class="articles__item-list">
+                      <li class="articles__item-list--title">
+                        Советы для ухода за собакой
+                      </li>
+                      <li class="articles__item-li">
+                        ухаживать
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 4 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                       причесывать
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="articles__item">
+                    <div class="articles__video" href="https://www.youtube.com/watch?v=iQ0QFWxhOXw&t=2s&ab_channel=DarinaSweet" data-fancybox>
+                      <img src="images/articles/3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="#content3" class="articles__content3">
+
+                  <div class="articles__item">
+                    <ul class="articles__item-list">
+                      <li class="articles__item-list--title">
+                        Советы для ухода за грызунами
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 2 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                        чистить клетку
+                      </li>
+                      <li class="articles__item-li">
+                        мыть
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="articles__item">
+                    <div class="articles__video" href="https://www.youtube.com/watch?v=0TO10MJNmYk&ab_channel=ElliDiPets" data-fancybox>
+                      <img src="images/articles/4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="#content4" class="articles__content3">
+
+                  <div class="articles__item">
+                    <ul class="articles__item-list">
+                      <li class="articles__item-list--title">
+                        Советы для ухода за рыбками
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 2 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                        чистить клетку
+                      </li>
+                      <li class="articles__item-li">
+                        мыть
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="articles__item">
+                    <div class="articles__video" href="https://www.youtube.com/watch?v=b8THxpPzDfE&ab_channel=TetraRussia" data-fancybox>
+                      <img src="images/articles/5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="#content5" class="articles__content3">
+
+                  <div class="articles__item">
+                    <ul class="articles__item-list">
+                      <li class="articles__item-list--title">
+                        Советы для ухода за экзотическими животными
+                      </li>
+                      <li class="articles__item-li">
+                        кормить 2 раза в день
+                      </li>
+                      <li class="articles__item-li">
+                        чистить клетку
+                      </li>
+                      <li class="articles__item-li">
+                        мыть
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="articles__item">
+                    <div class="articles__video" href="https://www.youtube.com/watch?v=QWilN1PBtUo&ab_channel=%23%D0%9A%D0%B0%D0%BA%D0%BE%D0%B3%D0%BE%D0%96%D1%83%D0%BA%D0%B0%3F%21" data-fancybox>
+                      <img src="images/articles/6.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="algorithm" id="algorithm">
+        <div class="container">
+          <h2 class="algorithm__title">
+            Наш алгоритм
+          </h2>
+          <div class="algorithm__inner">
+            <div class="algorithm__info">
+              <p class="algorithm__info-text">
+                Алгоритм «Чарли - Ваш персональный питомец» - алгоритм подбора питомца, подходящего именно Вам
+              </p>
+              <p class="algorithm__info-text--issue">
+                Алгоритм «Чарли - Ваш персональный питомец» находится на стадии разработки, спасибо за понимание
+              </p>
+              <a class="algorithm__info-btn" href="#">
+                Подобрать питомца
+              </a>
+            </div>
+            <div class="algorithm__video" href="https://www.youtube.com/watch?v=YQQ39DsKp44&ab_channel=%D0%96%D0%B8%D0%B2%D0%B0%D1%8F%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0" data-fancybox>
+              <img src="images/algorithm/1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="container">
+          <h2 class="subscription__title">
+            Подписка
+          </h2>
+          <div class="subscription__items">
+            <div class="subscription__item">
+              <h4 class="subscription__item-title">
+                Gentle
+              </h4>
+              <div class="subscription__item-price">
+                199
+                <span>₽/Мес.</span>
+              </div>
+              <ul class="subscription__item-list">
+                <li class="subscription__item-li">
+                  – предоставление пользователям сведений о лицензированных заводчиках и питомниках;
+                </li>
+              </ul>
+              <a class="subscription__item-btn" href="#">
+                Подключить
+              </a>
+            </div>
+            <div class="subscription__item">
+              <h4 class="subscription__item-title">
+                Premium
+              </h4>
+              <div class="subscription__item-price">
+                399
+                <span>₽/Мес.</span>
+              </div>
+              <ul class="subscription__item-list">
+                <li class="subscription__item-li">
+                  – лицензирование, доступ к алгоритму «Чарли – Ваш персональный питомец»
+                </li>
+                <li class="subscription__item-li">
+                  -создание истории болезни своего питомца.
+                </li>
+              </ul>
+              <a class="subscription__item-btn" href="#">
+                Подключить
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="clinics">
+        <div class="container">
+          <h2 class="clinics__title">
+            Ветклиники рядом
+          </h2>
+          <div class="clinics__inner">
+            <div class="clinics__info">
+              <ul class="clinics__info-list">
+                <li class="clinics__info-item--title">
+                  Поможем вам найти лучшие :
+                </li>
+                <li class="clinics__info-item">
+                  Ветклиники
+                </li>
+                <li class="clinics__info-item">
+                  Зоомагазины
+                </li>
+                <li class="clinics__info-item">
+                  Питомники
+                </li>
+              </ul>
+              <a class="clinics__info-btn" href="#">
+                Найти
+              </a>
+            </div>
+            <div class="clinics__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1133.2123292602907!2d37.66893303600083!3d55.74005829958758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ac3a9e499e9%3A0x3183bc70ab2ec913!2sPetshop.ru!5e0!3m2!1sru!2sru!4v1670347138798!5m2!1sru!2sru"
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="team" id="about">
+        <div class="container">
+          <h2 class="team__title">
+            Наша команда
+          </h2>
+          <div class="team__items">
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/1.jpg" alt="">
+              <span class="team__item-name">
+                Давыдова Анастасия 
+              </span>
+              <span class="team__item-position">
+                Маркетолог
+              </span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/2.jpg" alt="">
+              <span class="team__item-name">
+              Баяндина  Ирина 
+              </span>
+              <span class="team__item-position">
+                СЕО, питчер, аналитик
+              </span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/3.jpg" alt="">
+              <span class="team__item-name">
+              Димитров  Васил 
+              </span>
+              <span class="team__item-position">
+                Front-end разработчик,
+                UX/UI дизайнер
+              </span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/4.jpg" alt="">
+              <span class="team__item-name">
+                Мухин Георгий
+              </span>
+              <span class="team__item-position">
+                Специалист по оптимизации
+                сайтов
+              </span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/5.jpg" alt="">
+              <span class="team__item-name">
+                 Таранова Екатерина
+              </span>
+              <span class="team__item-position">
+                Аналитик
+              </span>
+            </div>
+            <div class="team__item">
+              <img class="team__item-img" src="images/team/6.jpg" alt="">
+              <span class="team__item-name">
+                Дойникова Ольга 
+              </span>
+              <span class="team__item-position">
+                Бизнес-аналитик
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="partners">
+        <div class="container">
+          <h2 class="partners__title">
+            Наши партнеры
+          </h2>
+          <div class="partners__items">
+            <ul class="partners__list">
+              <li class="partners__item">
+                <img class="partners__img" src="images/partners/1.svg" alt="partners">
+              </li>
+              <li class="partners__item">
+                <img class="partners__img" src="images/partners/2.svg" alt="partners">
+              </li>
+              <li class="partners__item">
+                <img class="partners__img" src="images/partners/3.svg" alt="partners">
+              </li>
+              <li class="partners__item">
+                <img class="partners__img" src="images/partners/4.svg" alt="partners">
+              </li>
+              <li class="partners__item">
+                <img class="partners__img" src="images/partners/5.svg" alt="partners">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+   <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+            <p class="logo__text">
+              PET ME <br> Semper Fidelis - всегда верен
+            </p>
+          </a>
+          <div class="footer__links">
+            <a class="footer__link" href="https://vk.com/club217684291">
+              ВКОНТАКТЕ
+            </a>
+            <a class="footer__link" href="#">
+              TWITTER
+            </a>
+            <a class="footer__link" href="https://t.me/LetMe_PetMe_bot">
+              TELEGRAM
+            </a>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__contacs-phone" href="tel:+89992997623">
+              +8-999-299-76-23
+            </a>
+            <a class="footer__contacs-email" href="mailto:pet.me@list.ru">
+              pet.me@list.ru
+            </a>
+          </div>
+          <a class="goup" href="#">
+            <img src="images/goup.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>  
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
