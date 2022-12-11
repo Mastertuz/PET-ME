@@ -4,17 +4,11 @@ const content2 = document.getElementById('#content2');
 const content3 = document.getElementById('#content3');
 const content4 = document.getElementById('#content4');
 const content5 = document.getElementById('#content5');
+const content6 = document.getElementById('#content6');
 const changingContent = document.getElementById('#changing-content');
 const menuBtn = document.getElementById('#menu__btn');
 const menuBtnList = document.getElementById('#menu__list');
 const menuBtnLine = document.querySelectorAll('.burger-line');
-console.log(menuBtnLine);
-
-
-
-
-
-
 
 
 select.addEventListener('change',()=>{
@@ -31,6 +25,9 @@ if(options == 'cat'){
 else if (options == 'exotic'){
     changingContent.innerHTML = content5.innerHTML;
 }
+else if (options == 'bird'){
+    changingContent.innerHTML = content6.innerHTML;
+}
 });
 
 
@@ -40,11 +37,3 @@ menuBtn.addEventListener('click',()=> {
         item.classList.toggle('burger-line--active')
     })
 });
-
-
-
-
-//  $('.menu__btn').on('click', function(){
-//     $('.menu__list').toggleClass('menu__list--active');
-//   $('.burger-line').toggleClass('burger-line--active');
-//   });
