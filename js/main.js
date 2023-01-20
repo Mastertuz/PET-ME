@@ -31,6 +31,7 @@ else if (options == 'bird'){
 });
 
 
+
 menuBtn.addEventListener('click',()=> {
     menuBtnList.classList.toggle('menu__list--active');
     menuBtnLine.forEach((item)=>{
