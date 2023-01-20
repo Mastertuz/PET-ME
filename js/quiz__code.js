@@ -58,5 +58,6 @@ window.onload = function () {
         div.insertAdjacentHTML('beforeend', answers[key]['result-box'])
         document.querySelector('.quiz__inner').appendChild(div);
     }
+    
     showQuestion(step);
 }
