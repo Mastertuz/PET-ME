@@ -52,7 +52,7 @@
     }
 }
 
-@media(max-width:900px) {
+@media(max-width:970px) {
 
     .menu__btn {
         position: absolute;
@@ -223,6 +223,7 @@
             width: 220px;
         }
     }
+
 }
 
 @media(max-width:650px) {
@@ -311,6 +312,44 @@
             font-size: 30px;
         }
        
+    }
+    .quiz{
+        &__title{
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    .questions{
+        font-size: 20px;
+    }
+    .answer-variant{
+        font-size: 18px;
+    }
+    .result{
+        &__inner{
+            flex-direction: column;
+        }
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__imgbox{
+            margin-right: 0;
+            margin-bottom: 60px;
+        }
+        &__img{
+margin-bottom: 10px;
+        }
+    }
+    .advices{
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__item{
+            padding-left: 7px;
+            &::before{
+                left: -7px;
+            }
+        }
     }
 }
 
@@ -405,7 +444,31 @@ width: 140px;
 .footer__links a+a{
     margin-left: 20px;
 }
+.quiz{
+    &__title{
+        font-size: 20px;
+    }
 }
+.answer-variant{
+    padding-left: 15px;
+}
+.answer-variant::before{
+    top: 7px;
+    left: -7px;
+}
+.result{
+    &__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+.advices{
+    &__title{
+        font-size: 20px;
+    }
+}
+}
+
 
 @media(max-width:400px) {
     .articles {
@@ -432,5 +495,16 @@ width: 140px;
         &__map iframe{
             width: 250px;
         }
+    }
+    .quiz{
+        &__title{
+            font-size: 16px;
+        }
+    }
+    .questions{
+        font-size: 16px;
+    }
+    .answer-variant{
+        font-size: 16px;
     }
 }
